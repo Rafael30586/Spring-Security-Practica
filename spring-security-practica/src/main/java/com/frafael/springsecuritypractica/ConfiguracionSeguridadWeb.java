@@ -21,6 +21,14 @@ public class ConfiguracionSeguridadWeb {
 				.username("rafael")
 				.password("123456")
 				.roles("USER").build());
+		manager.createUser(User.withDefaultPasswordEncoder()
+				.username("marianela")
+				.password("908")
+				.roles("USER").build());
+		manager.createUser(User.withDefaultPasswordEncoder()
+				.username("david")
+				.password("512")
+				.roles("USER").build());
 		return manager;
 	}
 	
