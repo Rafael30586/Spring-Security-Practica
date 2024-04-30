@@ -32,6 +32,7 @@ public class ConfiguracionSeguridadWeb {
 		return manager;
 	}
 	
+	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
 		http.authorizeHttpRequests(authorize -> 
 		authorize.anyRequest().authenticated()).formLogin(Customizer.withDefaults())
