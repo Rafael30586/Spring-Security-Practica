@@ -1,0 +1,47 @@
+:root{
+    --color1: #5526e5;
+    --color2: #fcf1eb;
+    --color3: #2b8fb1;
+    --color4: #9e8422;
+    --color5: #1a4bdb;
+}
+
+body{
+    background-color:var(--color2);
+}
+
+.contenedor-principal{
+    width: 100%;
+}
+
+.contenedor-login{
+    width: 500px;
+    height: 400px;
+    /*background-color: var(--color1);*/
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background: linear-gradient(to right,var(--color1),var(--color5));
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    background-color: var(--color3);
+    margin-top: 50px;
+    margin-left: 30px;
+    color: var(--color2);
+}
+
+button{
+    margin-top: 50px;
+    margin-left: 30px;
+    background-color: var(--color4);
+    width: 100px;
+    height: 25px;
+    color: var(--color2);
+}
