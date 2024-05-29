@@ -12,6 +12,7 @@ import com.f_rafael.dan_vega_registro_de_usuarios.repository.UserRepository;
 @Service
 public class JpaUserDetailsService implements UserDetailsService{
 	
+	
 	private final UserRepository userRepository;
 
 	@Autowired
