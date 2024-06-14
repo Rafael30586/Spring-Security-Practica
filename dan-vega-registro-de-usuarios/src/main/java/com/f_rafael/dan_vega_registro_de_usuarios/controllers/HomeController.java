@@ -34,7 +34,7 @@ public class HomeController {
     //@PreAuthorize("hasRole('Admin')")
     @GetMapping("/admin")
     public String admin() {
-        return "Hello, Admin!";
+        return "Hello, Admin!"; //Me esta dando un error 403, la autenticacion no hara diferencia
     }
     
     @PostMapping("/user")

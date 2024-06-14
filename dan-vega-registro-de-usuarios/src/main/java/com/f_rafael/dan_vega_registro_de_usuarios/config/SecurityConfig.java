@@ -16,7 +16,7 @@ import com.f_rafael.dan_vega_registro_de_usuarios.services.JpaUserDetailsService
 @EnableWebSecurity
 public class SecurityConfig {
 	
-	private JpaUserDetailsService myUserDetailsService;
+	private JpaUserDetailsService myUserDetailsService;//rafael 1234 Admin, cristian 1234 USER
 	
 	@Autowired
 	public SecurityConfig(JpaUserDetailsService myUserDetailsService) {
@@ -33,6 +33,8 @@ public class SecurityConfig {
         				.requestMatchers("/").permitAll())
         		.userDetailsService(myUserDetailsService)
         		.formLogin(login->login.permitAll())
+        		.headers(headers -> headers.frameOptions().sameOrigin())
+        		.httpBasic(Customizer.withDefaults())
         		.build();          
     }
 
